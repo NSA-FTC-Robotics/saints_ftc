@@ -1,0 +1,153 @@
+# FTC Planning  
+  
+## Team Organization  
+  
+- Team Captain  
+    - Responsibility  
+        - Project Management  
+        - Training teammates  
+        - Engineering Consultation  
+        - System Integrator  
+            - Interface manager  
+            - CAD user  
+                - Model robot with mechanisms to scale using CAD  
+        - Inspire Award  
+            - Robot Performance  
+            - Robot Design  
+                - Engineering Notebook about Robot  
+            - Gracious Professionalism  
+            - Outreach and Community Impact  
+                - Judged Presentation  
+                - Notebook  
+- Subsytem Leads  
+    - Design and implementation of subsystem that meets requirements  
+    - Leads building teams  
+    - Contribute material to engineering notebook  
+- Architecture Designer  
+    - Maintain configuration of wired architecturee  
+- Autonomous Control Programmer  
+    - Identify autonomous robot operations  
+    - Implement autonomous operations into code  
+- Driver Control Programmer  
+    - Write driver control code  
+- Notebook Organizer  
+    - Compile notebook from team submissions  
+- Morale / Logistics Lead  
+    - Develop team SWAG  
+    - Pit setup at competition  
+        - Chairs  
+        - Banners  
+        - SWAG  
+        - Robot display board  
+    - Transportation Plan  
+        - Robot container  
+        - Tools  
+        - Batteries  
+    - Tool Management  
+        - Design tool box  
+        - Implement shadowed tool box  
+- Builders  
+    - Assist subsystem with assembly of subsystem  
+    - Assist Morale / Logistics Lead with building tasks  
+- Collateral Duties  
+    - Battery Manager  
+        - Ensures that batteries are charged at competition  
+    - Scouter  
+        - Promote abilities of NSA robot to other teams at competition  
+        - Identify teams at competition with complementary capabilities  
+        - Identify innovative capabilities in other competitions robots that can be applied to future robot designs  
+    - Photographer  
+        - Video competition rounds  
+        - Take team photographs during competition  
+        - Take photos of other robots at competitions  
+        - Creates Promote Award video  
+    - Control Award Lead  
+        - Writes submission for Control Award  
+- Sponsor/Head Coach  
+    - Liaison to School  
+    - Trip Administration  
+    - Propose outreach events  
+- All teammates  
+    - Participate in judging sessions  
+    - Be familiar with NSA robot capabilities, strengths, and weaknesses  
+    - Propose or organize outreach events  
+    - Maintain tool and consumable disclipline  
+    - Participate in outreach events  
+- Parents  
+    - Propose outreach events  
+    - Cheerleaders at competition  
+  
+## Process  
+  
+- Design Considerations  
+    - Fasteners  
+        - As short as possible  
+        - Accessible locations  
+        - Minimize number of unique fasteners  
+- Software Version Control  
+    - Programmers will use GitHub for software  management  
+- CAD  
+- Engineering Notebook  
+    - Charter  
+    - Roles and Responsibilities  
+    - Kept on Google Drive  
+  
+## Charter  
+  
+- Purpose of club  
+    - To educate members of the club on engineering practices  
+    - To provide experience in designing, building, and programming a robot  
+    - Represent NSA  
+- Measurable objectives  
+    - Advance to State Tournament from first (Orange) qualifier  
+    - Advance to World Tournament  
+    - Achieve 1st, 2nd, or 3rd place for Inspire award at any competition  
+- Summary Milestone Schedule  
+    - Robot chassis built (1 July)  
+    - Robot chassis programmed with odometry wheels (1 August)  
+    - Challenge released: September  
+    - Challenge release + 1 week: Develop robot conceptual design, decomposition into subsystems, parts ordered  
+    - Challenge + 4 week: Operating driver-controlled robot  
+    - Challenge + 6 week: Operating autonomous robot meeting threshold requirements  
+    - Challenge + 8 week: Gameplay and operations optimized  
+    - November: First FTC Qualifier Competition  
+    - December: Second FTC Qualifier Competition  
+    - February: State FTC Competition  
+    - April: World FTC Competition  
+- Summary Budget  
+    - Authority to spend  
+        - Mr. Sanford  
+    - Expected Expenses  
+        - Game Pieces: $450  
+        - Registration: $275  
+        - Tournament Entry Fees  
+            - Qualifier x 2: $300 total  
+            - State: $300  
+        - Parts: $1000  
+        - Pelican Case: $350  
+    - Expected Revenues  
+        - Fundraising: $800  
+        - Donations  
+        - NSA  
+        - Board  
+- Team Captain  
+    - Authority  
+        - Decision Maker when consensus breaks down  
+- Sponsor  
+    - Mr. Sanford  
+- Decision Process  
+    - Subsystem leads own subsystems  
+    - Consensus; Team Captain and Sponsor as tie breakers  
+- Stakeholders  
+    - Manage Closely (high interest, hi power)  
+        - Advancement Office  
+            - Donors  
+            - NSA Board of Directors  
+    - Keep Satsified (low interest, high power)  
+        - STEM Lab Coordinator  
+    - Keep Informed (high interest, low power)  
+        - Team Parents  
+        - Partner Teams  
+    - Monitor (low interest, low power)  
+        - School Community  
+        - Adult Supervisors  
