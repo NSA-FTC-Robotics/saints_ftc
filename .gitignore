@@ -26,3 +26,17 @@ build/
 
 *ASUS_PC_01*
 
+# LaTeX Compile files
+*.acn
+*.aux
+*.fdb_latexmk
+*.fls
+*.glo
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.out
+*.synctex.gz
+

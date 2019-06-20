@@ -1,0 +1,83 @@
+latex config:		article
+Title:				Guidance, Navigation, and Control Concept
+Author:                          
+Date:				
+Base Header Level:	3  
+latex mode:			memoir  
+
+# Frames of Reference
+
+## Robot Frame of Reference
+
+![Robot Frame of Reference][robot_frame]
+
+[robot_frame]: robot_frame width="1.5in"
+
+- Coordinate Axes
+	- \\(\hat{x}\\): forward
+	- \\(\hat{y}\\): left
+	- \\(\hat{z}\\): up
+- Encoders
+	- **x1** and **x2**: forward and aft  
+	- **y1**: side to side
+- Measured variables
+	- \\(R_0\\): radius of encoder wheel
+	- \\(N_0\\): number of "ticks" per encoder wheel rotation
+	- \\(N_{x_1}, N_{x_2}, N_{y_1}\\): number of "ticks" recorded on each encoder
+- Computed values
+	- \\(\Delta N_{x_1}, \Delta N_{x_2}, \Delta N_{y_1}\\): number of tickets  measured on each encoder during time step
+	- \\(\Delta s_x, \Delta s_y\\): distance measured in forward and left direction in robot frame of reference during time step
+	- \\(\Delta \theta\\): Change in robot heading during time step
+
+## Field Frame of Reference
+
+![Field Frame of Reference][field_for]
+
+[field_for]: field_for width="3.5in"
+
+- Coordinate Axes
+	- Origin defined for each game and alliance-specific
+	- \\(\hat{X}_F\\): to right from origin
+	- \\(\hat{Y}_F\\): away from origin
+	- \\(\theta\\): robot heading; clockwise angle from \\(\hat{Y}_F\\) to \\(\hat{x}\\):
+- Robot Starting Position: \\((\hat{X}_{F_0}, \hat{Y}_{F_0}, \theta_{0})\\)
+
+# Time Step
+
+## Definitions
+
+- Each time step is an arbitrary amount of time within which robot identifies its location, determines trajectory to objective, and commands motors to follow trajectory
+- Time step duration: \\(\Delta t\\)
+- Time step starts at: \\(t - \Delta t\\)
+- Time step ends at: \\(t\\)
+
+## Activities During Each Time Step
+
+### Navigation (Determine robot location)
+
+- Measure each encoder's tick counter at end of time step: \\([N_{x_1} (t), N_{x_2} (t), N_{y_1} (t)]\\)
+- Compute change in each encoder's tick counter over time step:
+\\[\Delta N_{x_1} = N_{x_1} (t) - N_{x_1} (t - \Delta t)\\]
+\\[\Delta N_{x_2} = N_{x_2} (t) - N_{x_2} (t - \Delta t)\\]
+\\[\Delta N_{y_1} = N_{y_1} (t) - N_{y_1} (t - \Delta t)\\]
+- Compute change in position and heading in robot Frame of Reference
+\\[\Delta s_x = \frac{R_0}{N_0} \left( \frac{\Delta N_{x_1} + \Delta N_{x_2}}{2} \right)\\]
+\\[\Delta s_y = \frac{R_0}{N_0} \Delta N_{y_1}\\]
+- Compute change in position in field Frame of Reference
+\\[\Delta X_F = \Delta s_x [\sin{\theta (t - \Delta t)}] - \Delta s_y [\cos{\theta (t - \Delta t)]}\\]
+\\[\Delta Y_F = \Delta s_x [\cos{\theta (t - \Delta t)}] + \Delta s_y [\sin{\theta (t - \Delta t)]}\\]
+- Compute change in heading
+\\[\Delta \theta = \frac{R_0}{N_0} \left( \frac{\Delta N_{x_1} - \Delta N_{x_2}}{2L} \right)\\]
+- Update robot postion and heading
+\\[X_F(t) = X_F(t - \Delta t) + \Delta X_F\\]
+\\[Y_F(t) = Y_F(t - \Delta t) + \Delta Y_F\\]
+\\[\theta (t) = \theta (t - \Delta t) + \Delta \theta \\]
+
+### Guidance (Determine trajectory to designated target)
+
+
+### Control (Command motors to execute guidance)
+
+- Point and Shoot Technique
+- Strafe Technique
+
